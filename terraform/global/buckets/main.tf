@@ -5,6 +5,9 @@ provider "aws" {
 resource "aws_s3_bucket" "terraform-state" {
 
   bucket = var.terraform-state
+
+  force_destroy = true
+
   acl    = "private"
 
   tags = {
@@ -13,13 +16,16 @@ resource "aws_s3_bucket" "terraform-state" {
   }
 }
 
-resource "aws_s3_bucket" "log-bucket" {
+resource "aws_s3_bucket" "files-bucket" {
 
-  bucket = var.log-bucket
+  bucket = var.files-bucket
+
+  force_destroy = true
+  
   acl = "private"
 
   tags = {
-    Name = "logbucket"
+    Name = "FilesBucket"
     Environment = "Dev"
   }
 }
