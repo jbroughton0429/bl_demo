@@ -5,10 +5,12 @@
 #
 # This script builds/creates your temporary files used for testing purposes
 # We use mkstemp to write a bunch of temp files to the filesystem and then
+
 # move these files over to a bucket.
 
 # When you are done playing around, be sure you run it's companion script
 # <clean-up.py> which will delete these folders/temp-files.
+
 
 import os
 import boto3
@@ -73,6 +75,7 @@ temp_files()
 upload_files(directory["dir1"])
 
 ## Print data in bucket - Testing
+
 
 #for bucket in bucket.objects.all():
 #    print(bucket)
