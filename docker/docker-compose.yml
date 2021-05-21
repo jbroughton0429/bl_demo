@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  awslist:
+    image: jtest:demo
+    volumes:
+      - type: bind
+        source: /home/jayson/.aws/credentials
+        target: /root/.aws/credentials
+      - type: volume
+        source: mydata
+        target: /project
+        
+volumes:
+  mydata:

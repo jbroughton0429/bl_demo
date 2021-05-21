@@ -1,5 +1,2 @@
-#TODO: Py script to check connection to bucket
-#TODO script to filecount (ls) files to file in docker shared mount. Place int count into location for health
-        * ls S3 bucket, dump to 'files-s3.txt' under a BIND mount
-        * itterate over the count in the files (1, 2, 3 files), this int to a separate file for health monitoring
+#TODO Verbose output for logging in docker container
 #TODO healthz to check status of container
