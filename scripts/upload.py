@@ -74,6 +74,6 @@ upload_files(directory["dir1"])
 
 ## Print data in bucket - Testing
 
-for bucket in bucket.objects.all():
-    print(bucket)
+#for bucket in bucket.objects.all():
+#    print(bucket)
 
