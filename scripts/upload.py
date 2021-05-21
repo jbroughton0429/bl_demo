@@ -5,12 +5,10 @@
 #
 # This script builds/creates your temporary files used for testing purposes
 # We use mkstemp to write a bunch of temp files to the filesystem and then
-# move these files over to 2 buckets, using an authorized sql user
-# This uses argparse with -l (legacy) and -m (modern) variables to create
-# the number of files necessary
+# move these files over to a bucket.
+
 # When you are done playing around, be sure you run it's companion script
-# <clean-up.py> which will delete these folders/temp-files, clear the database
-# and the S3 buckets of 'avatar'
+# <clean-up.py> which will delete these folders/temp-files.
 
 import os
 import boto3
