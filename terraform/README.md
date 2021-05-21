@@ -49,9 +49,6 @@ The TF-State is stored in the bucket. This means that from this Console machine,
     This will build out your environment (), and if you uncommented the Buckets, build out your Buckets. 
     
 **Please remember that you will need to uncomment the buckets for the first round, in order for TF-State to be built.**
-5. Run the following commands to retrieve the Internal and External IP addresses of your instances (this will be used at a later state)
-    ```sh
-    $ terraform -chdir=devops show | grep public_ip
     ```
    
    
