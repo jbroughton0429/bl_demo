@@ -8,17 +8,17 @@ This directory is meant for building out the AWS Bucket and packer image
 ### Variables
 *This one needs Work - I've got to move my TF data into vars*
 
-Buckets - [Bucket Data Path](/global/buckets/)
-Inside of vars.tf you will need to modify lines: 4,10,16,22 for your respective environments
+**vars.tf**
 
 Line 4: Bucket Region
 Line 10: Name of your TF State Bucket
-Line 16: Name of your Legacy Bucket
-Line 22: Name of your Bucket
+Line 16: Name of your Files Bucket
 
-Line 3: AWS Region
-Line 8: TF State Bucket
-Line 10: Bucket Region
+**main.tf**
+
+Line 2: AWS Region
+Line 5: TF State Bucket
+Line 19: Files Bucket
 
 # Building your Environment
 
